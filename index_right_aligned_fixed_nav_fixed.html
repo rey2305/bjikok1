@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rynn - Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .hamburger-line {
+            background-color: aqua;
+        }
+    
+        .hamburger-line { background-color: aqua; border-radius: 2px; transition: all .2s; }
+    </style>
+
+
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <!-- navbar -->
+    <header id="navbar" class="bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300">
+  <div class="container mx-auto flex justify-between items-center px-4">
+    <a href="#" class="font-bold text-cyan-400 py-5 text-lg">Rynn</a>
+
+    <!-- Desktop nav -->
+    <nav class="hidden lg:flex space-x-8">
+      <a href="#" class="text-base text-black/80 hover:text-indigo-600">BIO</a>
+      <a href="#porto" class="text-base text-black/80 hover:text-indigo-600">PORTO</a>
+      <a href="#client" class="text-base text-black/80 hover:text-indigo-600">KLIEN</a>
+      <a href="#blog" class="text-base text-black/80 hover:text-indigo-600">BLOG</a>
+      <a href="#contact" class="text-base text-black/80 hover:text-indigo-600">KONTAK</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <button id="hamburger" name="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" class="block lg:hidden">
+      <span class="hamburger-line block w-6 h-0.5 my-1"></span>
+      <span class="hamburger-line block w-6 h-0.5 my-1"></span>
+      <span class="hamburger-line block w-6 h-0.5 my-1"></span>
+    </button>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <nav id="navbar-menu" class="hidden lg:hidden absolute right-4 top-full mt-2 w-[250px] rounded-lg bg-white/70 backdrop-blur-md shadow-lg">
+    <ul class="py-3">
+      <li><a href="#" class="block py-2 px-6 text-black/80 hover:text-indigo-600">BIO</a></li>
+      <li><a href="#porto" class="block py-2 px-6 text-black/80 hover:text-indigo-600">PORTO</a></li>
+      <li><a href="#client" class="block py-2 px-6 text-black/80 hover:text-indigo-600">KLIEN</a></li>
+      <li><a href="#blog" class="block py-2 px-6 text-black/80 hover:text-indigo-600">BLOG</a></li>
+      <li><a href="#contact" class="block py-2 px-6 text-black/80 hover:text-indigo-600">KONTAK</a></li>
+    </ul>
+  </nav>
+</header>
+    <!-- navbar end -->
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20">
+        <div class="container mx-auto flex flex-col lg:flex-row items-start lg:items-center px-6 lg:px-20">
+
+            <!-- Text Content -->
+            <div class="lg:w-1/2 w-full text-left mb-10 lg:mb-0">
+                <h1 class="text-base font-semibold text-indigo-500">Halo Semua, nama saya
+                    <span class="block font-bold text-black text-4xl mt-1">Rynn</span>
+                </h1>
+                <h2 class="font-medium text-gray-700 text-lg mb-5">Gamer hebat & App Developer</h2>
+                <p class="font-medium text-slate-600 mb-10 leading-relaxed max-w-lg">
+                    Young programmer,like playing efootball,orangnya sigma cool dan mewing,handal main efootball udh
+                    pernah divisi 2
+                </p>
+                <a href="#"
+                    class="text-base font-semibold text-white bg-indigo-500 py-3 px-8 rounded-full hover:shadow-xl hover:scale-105 transition transform duration-300 ease-in-out">
+                    Hubungi Saya
+                </a>
+            </div>
+
+            <!-- Image -->
+            <div class="lg:w-1/2 w-full flex justify-end relative">
+                <img src="assets/image-removebg-preview.png" alt="" class="max-w-xs lg:max-w-sm z-10">
+                <span class="absolute -bottom-10 right-0 -z-10 opacity-50">
+                    <svg width="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#8A3FFC"
+                            d="M30.1,-51.4C42.9,-44.7,59.9,-44.6,69.9,-37.1C79.9,-29.6,82.9,-14.8,79.8,-1.8C76.8,11.3,67.7,22.6,59.3,32.7C50.8,42.8,42.9,51.7,33.1,60.6C23.4,69.4,11.7,78.2,1.6,75.4C-8.4,72.5,-16.9,58.2,-26.3,49.1C-35.7,40.1,-46.1,36.4,-57.8,29.1C-69.4,21.8,-82.2,10.9,-82.4,-0.1C-82.6,-11.1,-70.1,-22.2,-59.2,-30.8C-48.3,-39.4,-39.1,-45.6,-29.5,-54.2C-19.9,-62.7,-10,-73.7,-0.7,-72.5C8.6,-71.3,17.3,-58.1,30.1,-51.4Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- hero end -->
+    <!-- about section -->
+    <section id="id" class="pt-10 pb-10">
+        <div class="container mx-auto ">
+            <div class="flex flex-wrap">
+                <div class="w-full px-5 mb-10 lg:w-1/2">
+                    <h4 class="font-bold ippercase text-amber-400 text-lg mb-3">Tentang Saya</h4>
+                    <h2 class="font-bold text-black text-3xl mb-3 maxw-md">hire me!</h2>
+                    <p class="form-medium text-secondary max-w-xl">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Maxime ipsam, cupiditate, quae odio assumenda rerum libero ullam nisi, natus quis optio
+                        nulla error tenetur provident quo laudantium. Nisi, officiis repudiandae!</p>
+
+                </div>
+                <div class="w-full px-4  lg:w-1/2">
+                    <h3 class="font-semibold text-black text-3xl mb-3">mari bergaul</h3>
+                    <p class="form-medium text-secondary mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Maxime ipsam, cupiditate, quae odio assumenda rerum libero ullam nisi, natus quis optio nulla
+                        error tenetur provident quo laudantium. Nisi, officiis repudiandae!</p>
+                    <div class="flex items-center px-5">
+                        <a href=""
+                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-grey-300 hover:border-amber-400 hover:bg-amber-400">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Snapdragon</title>
+                                <path
+                                    d="M12 .016h-.351c-3.223.128-6.862 2.202-7.596 5.49-.032.127-.191.127-.223 0-.16-.799-.128-1.66.096-2.394a12.645 12.645 0 0 0-1.82 2.074 6.473 6.473 0 0 0-.638 1.34c-.447 1.405-.287 3.096.702 4.245.926 1.085 2.394 1.468 3.575 2.202 1.18.703 2.202 1.66 2.68 3 .511 1.405.416 3-.127 4.373-.032.127-.223.095-.223-.064.127-2.01-.894-3.894-2.777-4.787-.99-.447-2.106-.639-3.096-1.117C1.31 13.963.16 13.133 0 12.048c0 6.574 5.362 11.936 12 11.936 6.607 0 12-5.362 12-12S18.607.016 12 .016m8.745 18.638a11.663 11.663 0 0 1-3.255 2.872s0-.032.032-.032c-.83.479-1.724.894-2.681 1.15.734-.607 3.127-2.171 3.127-6.48 0-3.191-2.01-5.33-4.276-6.382C11.107 8.569 8.33 7.93 8.33 4.675c0-1.723 1.372-3.574 3.51-3.606.128-.032.288-.032.416-.032h.127a10.827 10.827 0 0 1 7.5 3.35 10.923 10.923 0 0 1 3.096 7.66v.064c0 1.34-.255 2.65-.702 3.862v.032c-.032.096-.096.223-.128.32-.032.063-.064.127-.064.159s-.032.032-.032.064a13.475 13.475 0 0 1-1.308 2.106" />
+                            </svg>
+                        </a>
+                        <a href=""
+                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-grey-300 hover:border-amber-400 hover:bg-amber-400">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Bitcoin SV</title>
+                                <path
+                                    d="M14.648 14.423l.003-.004a1.34 1.34 0 0 1-.498.659c-.269.189-.647.338-1.188.364l-1.99.004v-2.93c.288.008 1.565-.013 2.119.015.722.035 1.171.321 1.41.668.262.351.293.82.144 1.224zm-2.129-3.261c.503-.024.852-.162 1.101-.336.214-.146.375-.367.46-.611.134-.375.107-.81-.136-1.135-.223-.319-.638-.584-1.306-.616-.495-.026-1.413-.003-1.664-.01v2.709c.025.004 1.539-.001 1.545-.001zM24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zm-6.65 2.142c.022-1.477-1.24-2.332-1.908-2.572.715-.491 1.206-1.043 1.206-2.085 0-1.655-1.646-2.43-2.647-2.529-.082-.009-.31-.013-.31-.013V5.361h-1.633l.004 1.583H10.97V5.367H9.31v1.569c-.292.007-2.049.006-2.049.006v1.401h.571c.601.016.822.362.798.677v6.041a.408.408 0 0 1-.371.391c-.249.011-.621 0-.621 0l-.32 1.588h1.996v1.6h1.661v-1.591h1.091v1.594h1.624v-1.588c1.899.05 3.643-1.071 3.66-2.913z" />
+                            </svg>
+                        </a>
+                        <a href=""
+                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-grey-300 hover:border-amber-400 hover:bg-amber-400">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>NASA</title>
+                                <path
+                                    d="M4.344 13.598c.075.281.195.39.407.39.22 0 .335-.132.335-.39V8.804h1.379v4.794c0 .675-.088.968-.43 1.31-.247.248-.703.439-1.278.439-.464 0-.909-.154-1.192-.438-.249-.25-.386-.505-.599-1.311l-.846-3.196c-.074-.281-.194-.39-.406-.39-.22 0-.336.132-.336.39v4.794H0v-4.794c0-.675.088-.968.43-1.31.247-.248.703-.439 1.278-.439.464 0 .909.154 1.192.438.249.25.385.505.599 1.311zM22.575 15.196l-1.591-4.98a.415.415 0 00-.06-.132.226.226 0 00-.186-.082.226.226 0 00-.185.082.414.414 0 00-.06.132l-1.591 4.98h-1.425l1.739-5.44c.09-.283.22-.524.384-.684.282-.275.614-.419 1.138-.419.525 0 .857.144 1.139.42.164.16.294.4.384.683L24 15.196h-1.425zM15.531 15.196c.903 0 1.344-.192 1.692-.538.385-.383.569-.802.569-1.427 0-.553-.202-1.064-.51-1.37-.403-.4-.903-.527-1.719-.527h-1.142c-.436 0-.61-.053-.748-.188-.094-.093-.139-.23-.139-.393 0-.168.04-.334.156-.448.103-.1.243-.147.511-.147h3.301V8.804h-3.049c-.903 0-1.343.192-1.691.538-.385.383-.57.802-.57 1.427 0 .553.203 1.064.51 1.37.404.4.904.527 1.72.527h1.141c.437 0 .61.053.748.188.095.093.14.23.14.393 0 .169-.041.335-.157.448-.102.1-.242.147-.51.147h-3.405l-1.306-4.086c-.09-.283-.22-.524-.384-.684-.282-.275-.615-.419-1.139-.419s-.857.144-1.138.42c-.165.16-.294.4-.385.683l-1.738 5.44h1.424l1.592-4.98a.415.415 0 01.06-.132.226.226 0 01.185-.082c.082 0 .142.028.186.082a.413.413 0 01.06.132l1.591 4.98h4.144z" />
+                            </svg>
+                        </a>
+                        <a href=""
+                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-grey-300 hover:border-amber-400 hover:bg-amber-400">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Apple</title>
+                                <path
+                                    d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
+     <!-- portofolio -->
+      <section class="pt-36 pb-16 bg-slate-100" id="porto">
+        <div class="container mx-auto">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4><font-semibold class="text-lg text-cyan-400 mb-2">portofolio</font-semibold></h4>
+                    <h2 class="font-bold text-black text-3xl mb-3 sm:text-4xl lg:text:5xl">proyek saya selama 1 tahun</h2>
+                    <p class="font-medium text-violet-900 md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatum earum, cumque eius, fugit itaque cupiditate eligendi, iusto corrupti alias asperiores nobis fugiat quo. Doloremque consequuntur nihil voluptate corporis ex.</p>
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="assets/WhatsApp Image 2025-08-12 at 11.53.21_16e9c21f - Copy.jpg" alt="" class="w-full">
+                    </div>
+                    <h3 class="font-semi-bold text-xl text-dark mt-5 mb-3">Bantai ayam</h3>
+                    <p class="font-medium text-slate-700">3 poin untuk menghargai lawan 4 poin untuk memberitahu siapa rajanya </p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="assets/WhatsApp Image 2025-08-12 at 11.53.21_16e9c21f - Copy.jpg" alt="" class="w-full">
+                    </div>
+                    <h3 class="font-semi-bold text-xl text-dark mt-5 mb-3">Bantai ayam</h3>
+                    <p class="font-medium text-slate-700">3 poin untuk menghargai lawan 4 poin untuk memberitahu siapa rajanya </p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="assets/WhatsApp Image 2025-08-12 at 11.53.21_16e9c21f - Copy.jpg" alt="" class="w-full">
+                    </div>
+                    <h3 class="font-semi-bold text-xl text-dark mt-5 mb-3">Bantai ayam</h3>
+                    <p class="font-medium text-slate-700">3 poin untuk menghargai lawan 4 poin untuk memberitahu siapa rajanya </p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="assets/WhatsApp Image 2025-08-12 at 11.53.21_16e9c21f - Copy.jpg" alt="" class="w-full">
+                    </div>
+                    <h3 class="font-semi-bold text-xl text-dark mt-5 mb-3">Bantai ayam</h3>
+                    <p class="font-medium text-slate-700">3 poin untuk menghargai lawan 4 poin untuk memberitahu siapa rajanya </p>
+                </div>
+
+            </div>
+
+        </div>
+      </section>
+      <!-- portofolio end -->
+       <!-- testimonial -->
+        <section id="client" class="pt-36 pb-32 bg-slate-600">
+            <div class="container">
+                <div class="w-full px-4">
+                    <div class="mx-auto text-center mb-16">
+                        <h4><font-semibold class="text-lg text-cyan-400 mb-2">pernah collab dengan</font-semibold></h4>
+                        <p class="font-medium text-slate-100 md:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti error perspiciatis expedita fugiat labore qui dolor quos laborum minima repellat hic veritatis tempore eos fugit nisi, molestias ipsa quia culpa.</p>
+                    </div>
+                </div>
+                <div class="w-full px4">
+                <div class="flex flex-wrap items-center justify-center">
+                    <a href="#"
+                        class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="assets/apple.png" alt="apple" />
+                    </a>
+                    <a href="#"
+                        class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="assets/gpt.png" alt="chatgpt" />
+                    </a>
+                    <a href="#"
+                        class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="assets/rog.png" alt="ROG" />
+                    </a>
+                    <a href="#"
+                        class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="assets/tesla.svg.png" alt="Tesla" />
+
+                    </a>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <!-- testimonial end -->
+         <!-- blog section -->
+           <section class="pt-36 pb-16 bg-slate-100" id="porto">
+        <div class="container mx-auto">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4><font-semibold class="text-lg text-cyan-400 mb-2">BLOGG</font-semibold></h4>
+                    <h2 class="font-bold text-black text-3xl mb-3 sm:text-4xl lg:text:5xl">Artikel saya</h2>
+                    <p class="font-medium text-violet-900 md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatum earum, cumque eius, fugit itaque cupiditate eligendi, iusto corrupti alias asperiores nobis fugiat quo. Doloremque consequuntur nihil voluptate corporis ex.</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="assets/doom.jpeg" alt="" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="" class="block mb-3 font-semibold text-xl black hover:text-violet-500 truncate">Fantastic four first-step film terbaik</a>
+                            </h3>
+                            <p class="font-medium text-base text-cyan-400 mb-4">
+                                Fantastic four film ini gacor banget seruu parah lawannya galactus di film ini dia tuh pemakan planet jadi dia tuh sebenarnya tuh jahat tapi buat dirinya sendiri soalnya dia butuh makan planet buat hidup dan di akhir filmnya akhirnya dr doom di reveal di post credit ketemu franklin richard
+                            </p>
+                            <a href="https://en.wikipedia.org/wiki/The_Fantastic_Four:_First_Steps" class="font-medium text-sm text-cyan-400 bg-violet-500 py-2 px-4 rounded-lg hover:opacity-80">baca selengkapnya</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="assets/doom.jpeg" alt="" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="https://en.wikipedia.org/wiki/The_Fantastic_Four:_First_Steps" class="block mb-3 font-semibold text-xl black hover:text-violet-500 truncate">Fantastic four first-step film terbaik</a>
+                            </h3>
+                            <p class="font-medium text-base text-cyan-400 mb-4">
+                                Fantastic four film ini gacor banget seruu parah lawannya galactus di film ini dia tuh pemakan planet jadi dia tuh sebenarnya tuh jahat tapi buat dirinya sendiri soalnya dia butuh makan planet buat hidup dan di akhir filmnya akhirnya dr doom di reveal di post credit ketemu franklin richard
+                            </p>
+                            <a href="https://en.wikipedia.org/wiki/The_Fantastic_Four:_First_Steps" class="font-medium text-sm text-cyan-400 bg-violet-500 py-2 px-4 rounded-lg hover:opacity-80">baca selengkapnya</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="assets/doom.jpeg" alt="" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="" class="block mb-3 font-semibold text-xl black hover:text-violet-500 truncate">Fantastic four first-step film terbaik</a>
+                            </h3>
+                            <p class="font-medium text-base text-cyan-400 mb-4">
+                                Fantastic four film ini gacor banget seruu parah lawannya galactus di film ini dia tuh pemakan planet jadi dia tuh sebenarnya tuh jahat tapi buat dirinya sendiri soalnya dia butuh makan planet buat hidup dan di akhir filmnya akhirnya dr doom di reveal di post credit ketemu franklin richard
+                            </p>
+                            <a href="https://en.wikipedia.org/wiki/The_Fantastic_Four:_First_Steps" class="font-medium text-sm text-cyan-400 bg-violet-500 py-2 px-4 rounded-lg hover:opacity-80">baca selengkapnya</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </section>
+          <!-- blog end -->
+    <!-- contact section -->
+<section id="contact" class="pt-36 pb-32">
+    <div class="container mx-auto">
+        <div class="w-full px-4 lg:w-2/3 lg:mx-auto">
+            <h2 class="text-3xl font-bold text-center text-cyan-500 mb-8">Hubungi Saya</h2>
+        </div>
+
+        <form action="">
+            <div class="w-full px-4 lg:w-2/3 lg:mx-auto mb-6"> 
+                <label for="nama" class="text-base font-bold text-cyan-400">Nama</label>
+                <input type="text" id="nama" name="nama" class="w-full bg-slate-200 text-black p-3 rounded-md focus:ring-cyan-500 focus:border-amber-500 focus:bg-white focus:ring-0">
+            </div>
+
+            <div class="w-full px-4 lg:w-2/3 lg:mx-auto mb-6"> 
+                <label for="email" class="text-base font-bold text-cyan-400">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-slate-200 text-black p-3 rounded-md focus:ring-cyan-500 focus:border-amber-500 focus:bg-white focus:ring-0">
+            </div>
+
+            <div class="w-full px-4 lg:w-2/3 lg:mx-auto mb-6"> 
+                <label for="pesan" class="text-base font-bold text-cyan-400">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="5" class="w-full bg-slate-200 text-black p-3 rounded-md resize-none focus:ring-cyan-500 focus:border-amber-500 focus:bg-white focus:ring-0"></textarea>
+            </div>
+
+            <div class="w-full px-4 lg:w-2/3 lg:mx-auto mb-8">
+                <button type="submit" class="text-base font-semibold text-white bg-cyan-500 py-2 px-7 rounded-lg w-full hover:shadow-lg hover:opacity-80 transition duration-500">
+                    Kirim
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="bg-slate-900 text-white py-6">
+    <div class="container mx-auto text-center">
+        <p class="text-sm">&copy; 2025 <span class="text-cyan-400">@ryyndemigod</span>. Semua hak dilindungi.</p>
+        <p class="text-xs mt-2">Dibuat dengan ❤️ dan kopi dingin | Powered by TailwindCSS</p>
+    </div>
+</footer>
+
+    <script>
+  const btn = document.getElementById('hamburger');
+  const menu = document.getElementById('navbar-menu');
+  const navbar = document.getElementById('navbar');
+
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', (!expanded).toString());
+    });
+  }
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('bg-violet-300', 'backdrop-blur-md', 'shadow-lg');
+    } else {
+      navbar.classList.remove('bg-vieolet-300', 'backdrop-blur-md', 'shadow-lg');
+    }
+  });
+</script>
+</body>
+
+</html>
